@@ -1,0 +1,108 @@
+:root 
+{
+    --box-height: 72%; 
+    --box-width: 83%;
+}
+/* Variables */
+
+html
+{
+    height:100%;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height:100%;
+    margin: 0;
+    /* Removes scrollbar because margins are added on to body from the html height*/
+
+    background-image:linear-gradient(to bottom, #00CCE1, #004C54);
+}
+
+/* Main  container */
+.main-container
+{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   height: 100%;
+   width: 100%;
+}
+
+.box-container
+{
+    display:flex;
+    flex-direction:row;
+
+    height:var(--box-height);
+    width:var(--box-width);
+}
+
+/* Large box container*/
+#box1
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    width:67%;
+    height:100%;
+    
+    box-shadow: 0 0 5px #000000;
+    background-color:white;
+}
+
+/* Small box container*/
+#box2
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    width:33%;
+    height:100%;
+
+    box-shadow: 0 0 5px #000000;
+    background-color:lightgray;
+}
+/* End of main box */
+
+.top-container
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: var(--box-width);
+   
+}
+
+#title
+{
+    display: flex;
+    align-items: center;
+    color:  white;
+
+    width:33%;
+    
+}
+
+.contact-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 45%;
+    
+}
+
+.contact-container h1
+{
+    color: white;
+    font-size: 3.5vw;
+    text-decoration: underline;
+}
